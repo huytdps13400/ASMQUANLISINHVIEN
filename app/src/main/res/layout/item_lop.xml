@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_item_tenlop"
+        android:layout_width="wrap_content"
+        android:text="Ten lop"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/tv_sua_lop"
+        android:layout_width="30sp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/ic_create_black" />
+
+    <ImageView
+        android:id="@+id/tv_xoa_lop"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toRightOf="@+id/tv_item_tenlop"
+        android:layout_toStartOf="@+id/tv_sua_lop"
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+</RelativeLayout>

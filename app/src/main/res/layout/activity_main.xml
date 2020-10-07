@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bgr" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bogocavatar" />
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="30sp"
+                android:layout_height="40sp"
+                android:text="EXIT"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/avatar"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"/>
+
+            <TextView
+                android:id="@+id/mydashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Dashboard"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/edtbancangi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mydashboard"
+                android:layout_marginTop="10sp"
+                android:text="Chúc Bạn Một Ngày Vui Vẻ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+
+                android:textStyle="italic"
+
+                />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="100dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/them"
+                android:layout_width="72dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quan"
+
+                />
+
+            <TextView
+                android:id="@+id/txtquanli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Thêm Sinh Viên"
+              android:layout_marginTop="120dp"
+                android:layout_below="@+id/cardview1"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@+id/cardview1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/quanli"
+                android:layout_width="72dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:src="@drawable/lich"
+
+                />
+
+            <TextView
+                android:id="@+id/txtquanli2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Quản Lí Sinh Viên"
+                android:layout_marginTop="120dp"
+                android:layout_below="@+id/cardview1"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/cardview1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="100dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/quanlilop"
+                android:layout_width="72dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bangdiem"
+
+                />
+
+            <TextView
+                android:id="@+id/txtquanlilop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Quản Lí Lớp"
+                android:layout_marginTop="120dp"
+                android:layout_below="@+id/cardview3"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/cardview2"
+            android:layout_toRightOf="@+id/cardview3"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/changepass"
+                android:layout_width="72dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pass"
+
+                />
+
+            <TextView
+                android:id="@+id/txtchangepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Đổi Mật Khẩu"
+                android:layout_marginTop="120dp"
+                android:layout_below="@+id/cardview4"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

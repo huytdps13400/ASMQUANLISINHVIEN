@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txtmalop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/txtdate"
+        android:text="Mã Lớp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        />
+
+    <TextView
+    android:id="@+id/txttenlop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+    android:layout_toRightOf="@+id/avatar"
+    android:layout_below="@+id/txthoten"
+    android:text="Tên Lớp"
+        android:textStyle="bold"
+    android:layout_marginLeft="5dp"
+
+    />
+    <TextView
+        android:id="@+id/txtnganh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/txttenlop"
+        android:text="Tên Lớp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        />
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/txtnganh"
+        android:text="Ngày Sinh"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+
+        />
+    <TextView
+        android:id="@+id/txthoten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:textStyle="bold"
+        android:text="Họ Và Tên"
+        android:layout_marginLeft="5dp"
+
+        />
+    <ImageView
+        android:id="@+id/create"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/ic_create_black"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/xoa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/create"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+
+        android:src="@drawable/ic_delete_forever_black_24dp" />
+
+</RelativeLayout>
